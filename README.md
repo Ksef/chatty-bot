@@ -10,5 +10,5 @@ Your bot can ask anything you want, but there are two rules for your output:
 
 If a user enters an incorrect answer, the bot may print a message:
 
-    Please, try again.
+Please, try again.
 The program should stop on the correct answer and print: "Congratulations, have a nice day!" at the end.
