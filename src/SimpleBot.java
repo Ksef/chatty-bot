@@ -3,11 +3,12 @@ import java.util.stream.IntStream;
 
 public class SimpleBot {
 
-    private final Scanner scanner = new Scanner(System.in);
+    private final Scanner scanner;
     private String assistantName;
     private int birthYear;
 
     public SimpleBot(String assistantName, int birthYear) {
+        this.scanner = new Scanner(System.in);
         this.assistantName = assistantName;
         this.birthYear = birthYear;
     }
