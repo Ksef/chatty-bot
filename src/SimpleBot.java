@@ -4,9 +4,16 @@ import java.util.stream.IntStream;
 public class SimpleBot {
 
     private final Scanner scanner = new Scanner(System.in);
+    private String assistantName;
+    private int birthYear;
+
+    public SimpleBot(String assistantName, int birthYear) {
+        this.assistantName = assistantName;
+        this.birthYear = birthYear;
+    }
 
     public void run() {
-        greet("Aid", "2018");
+        greet();
         remindName();
         guessAge();
         count();
@@ -16,7 +23,7 @@ public class SimpleBot {
         end();
     }
 
-    private void greet(String assistantName, String birthYear) {
+    private void greet() {
         String data = String.format("""
                 Hello! My name is %s
                 I was created in %s
