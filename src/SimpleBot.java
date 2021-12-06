@@ -3,6 +3,8 @@ import java.util.stream.IntStream;
 
 public class SimpleBot {
 
+    private final Scanner scanner = new Scanner(System.in);
+
     public void run() {
         greet("Aid", "2018");
         remindName();
@@ -13,8 +15,6 @@ public class SimpleBot {
         scanner.close();
         end();
     }
-
-    private final Scanner scanner = new Scanner(System.in);
 
     private void greet(String assistantName, String birthYear) {
         String data = String.format("""
